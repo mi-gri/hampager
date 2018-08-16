@@ -1,5 +1,5 @@
 #!/bin/bash
-# hampager script v 1.02 by DO3BOX
+# hampager script v 1.04 by DO3BOX
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -31,7 +31,7 @@
 owncall="yourcall"
 ownpass="yourpass"
 # Liste der zulässigen TX-Groups. Diese ist editierbar, man muss dann allerdings weiter unten (1) die Abfrage ebenfalls erweitern
-OPTIONS="all dl-all dl-bb dl-be dl-bw dl-by dl-hb dl-he dl-hh dl-mv dl-ni dl-nw dl-nw-koeln dl-rp dl-sh dl-sl dl-sn dl-st dl-th on-all pa-all test"
+OPTIONS="all dl-all dl-bb dl-be dl-bw dl-by dl-hb dl-he dl-hh dl-mv dl-ni dl-nw dl-nw-koeln dl-rp dl-sh dl-sl dl-sn dl-st dl-th ea-all f-all ha-all hb-all hs-all it-all ja-all la-all lu-all lx-all lz-all oe-all ok-all om-all on-all oz-all pa-all s5-all sm-all sp-all ua-all uk-all us-all ve-all vk-all yo-all test"
 #
 while true
  do
@@ -41,7 +41,7 @@ while true
   select txgroup in $OPTIONS; do
      case "$txgroup" in
         # (1) Bitte entsprechend der oben zugelassenen TX-Groups anpassen
-        all|dl-all|dl-bb|dl-be|dl-bw|dl-by|dl-hb|dl-he|dl-hh|dl-mv|dl-ni|dl-nw|dl-nw-koeln|dl-rp|dl-sh|dl-sl|dl-sn|dl-st|dl-th|on-all|pa-all|test)
+         all|dl-all|dl-bb|dl-be|dl-bw|dl-by|dl-hb|dl-he|dl-hh|dl-mv|dl-ni|dl-nw|dl-nw-koeln|dl-rp|dl-sh|dl-sl|dl-sn|dl-st|dl-th|ea-all|f-all|ha-all|hb-all|hs-all|it-all|ja-all|la-all|lu-all|lx-all|lz-all|oe-all|ok-all|om-all|on-all|oz-all|pa-all|s5-all|sm-all|sp-all|ua-all|uk-all|us-all|ve-all|vk-all|yo-all|test)
               echo $call @ $txgroup : $message
               read -p "Korrekt (J/n)? " korrekt
               case "$korrekt" in
