@@ -1,5 +1,5 @@
 #!/bin/bash
-# hampager script v 1.05 by DO3BOX
+# hampager script v 1.06 by DO3BOX
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -33,6 +33,10 @@ ownpass="yourpass"
 # Liste der zulässigen TX-Groups. Diese ist editierbar, man muss dann allerdings weiter unten (1) die Abfrage ebenfalls erweitern
 OPTIONS="all b-all br-all ca-all ct-all dl-all dl-bb dl-be dl-bw dl-bw-freiburg dl-bw-karlsruhe dl-bw-stuttgart dl-bw-tuebingen dl-by dl-by-mittelfranken dl-by-niederbayern dl-by-oberbayern dl-by-unterfranken dl-hb dl-he dl-he-darmstadt dl-he-giessen dl-hh dl-mv dl-ni dl-nw dl-nw-arnsberg dl-nw-detmold dl-nw-duesseldorf dl-nw-koeln dl-nw-muenster dl-rp dl-sh dl-sh-nord dl-sl dl-sn dl-st dl-th ea-all f-all ha-all hb-all hs-all it-all ja-all la-all lu-all lx-all lz-all oe-all ok-all om-all on-all on-lg on-ov on-wb on-wv oz-all pa-all pa-br pa-fl pa-ge pa-lb pa-nh pa-oi pa-ut s5-all sm-all sp-all ua-all uk-all us-all ve-all vk-all yo-all z3-all zl-all 4x-all test"
 #
+echo
+echo "hampager bash script V1.06"
+echo "Copyright 2018 by Michael Grigutsch, DO3BOX. Published under GNU General Public License v3.0"
+echo
 while true
  do
   read -p "An Call: " call
@@ -69,7 +73,7 @@ case "$again" in
       unset korrekt
       echo "-----"
       ;;
-      *) echo "73! written by Michael Grigutsch, DO3BOX, under GNU General Public License v3.0 in 2018"
+      *) echo "73! Copyright 2018 by Michael Grigutsch, DO3BOX. Published under GNU General Public License v3.0"
          break
       ;;
 esac
