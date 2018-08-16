@@ -69,7 +69,7 @@ case "$again" in
       unset korrekt
       echo "-----"
       ;;
-      *) echo "73! written by Michael Grigutsch, DO3BOX, under GPL 3 in 2018"
+      *) echo "73! written by Michael Grigutsch, DO3BOX, under GNU General Public License v3.0 in 2018"
          break
       ;;
 esac
