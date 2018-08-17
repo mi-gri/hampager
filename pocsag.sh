@@ -1,5 +1,7 @@
 #!/bin/bash
-# hampager script v 1.06 by DO3BOX
+####################################
+# hampager script v 1.06 by DO3BOX #
+####################################
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -51,10 +53,10 @@ while true
               read -p "Korrekt (J/n)? " korrekt
               case "$korrekt" in
                     J|j|Ja|ja|Y|y|Yes|yes|"") 
-		    echo "Rueckmeldung von hampager.de: "
-                    # Hier wird der Ruf ausgelöst
-                    curl -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$message"'", "callSignNames": ["'"$call"'"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de:8080/calls
-                    break
+                     echo "Rueckmeldung von hampager.de: "
+                     # Hier wird der Ruf ausgelöst
+                     curl -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$message"'", "callSignNames": ["'"$call"'"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de:8080/calls
+                     break
                     ;;
                     *) echo "Abgebrochen"
                        break
