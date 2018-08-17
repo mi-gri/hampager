@@ -1,6 +1,6 @@
 #!/bin/bash
 ####################################
-# hampager script v 1.06 by DO3BOX #
+# hampager script v 1.07 by DO3BOX #
 ####################################
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -37,14 +37,14 @@ OPTIONS="all b-all br-all ca-all ct-all dl-all dl-bb dl-be dl-bw dl-bw-freiburg 
 #
 printf "\033c"
 echo
-echo "hampager bash script V1.06"
+echo "hampager bash script V1.07"
 echo "Copyright 2018 by Michael Grigutsch, DO3BOX. Published under GNU General Public License v3.0"
 echo
 while true
  do
   read -p "An Call: " call
   read -p "Nachricht: " message
-  echo "Bitte TX-Gruppe auswaehlen:"
+  echo "Bitte TX-Gruppe auswählen:"
   select txgroup in $OPTIONS; do
      case "$txgroup" in
         # (1) Bitte entsprechend der oben zugelassenen TX-Groups anpassen
@@ -53,7 +53,7 @@ while true
               read -p "Korrekt (J/n)? " korrekt
               case "$korrekt" in
                     J|j|Ja|ja|Y|y|Yes|yes|"") 
-                     echo "Rueckmeldung von hampager.de: "
+                     echo "Rückmeldung von hampager.de: "
                      # Hier wird der Ruf ausgelöst
                      curl -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$message"'", "callSignNames": ["'"$call"'"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de:8080/calls
                      break
@@ -63,7 +63,7 @@ while true
                     ;;
               esac
         ;;
-        *) echo "Bitte gueltige TX-Gruppe waehlen"
+        *) echo "Bitte gueltige TX-Gruppe wählen"
         ;;
      esac
   done
