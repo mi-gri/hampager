@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################################
-# hampager simple script v 1.00 by DO3BOX #
+# hampager simple script v 1.07 by DO3BOX #
 ###########################################
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
