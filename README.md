@@ -1,4 +1,6 @@
-# deutsch
+# hampager
+
+## deutsch
 Bash-Script um Nachrichten an Amateurfunk/DAPNET-Empfänger über hamnet.de zu versenden.
 
 Die jeweils aktuelle Version findet sich unter https://github.com/mi-gri/hampager
@@ -6,7 +8,7 @@ Die jeweils aktuelle Version findet sich unter https://github.com/mi-gri/hampage
 Anleitung:
 Vor Benutzung auf hampager.de registrieren und eigene Zugangs-Daten im Script unter "owncall" und "ownpass" eintragen.
 
-# english
+## english
 bash-script for paging via hamradio/dapnet using hampager.de
 
 The most recent version can be found at https://github.com/mi-gri/hampager
