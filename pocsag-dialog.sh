@@ -60,7 +60,7 @@ while true
   if [ $korrekt = 0 ]
     then
         # Hier wird der Ruf ausgelöst
-        curl -s -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$message"'", "callSignNames": ["'"$call"'"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de:8080/calls|dialog --programbox 40 80
+        curl -s -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$message"'", "callSignNames": ["'"$call"'"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de/api/calls|dialog --programbox 40 80
     else
         dialog --infobox "Abgebrochen" 0 0
         sleep 1
