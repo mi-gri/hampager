@@ -35,4 +35,4 @@ ownpass="yourpass"
 txgroup="dl-all" # gesetzte Transmitter Group
 message = "$*" # Nachricht wird als Parameter übergeben
 # Hier wird der Ruf ausgelöst
-curl -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$*"'", "callSignNames": ["do3box"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de:8080/calls
+curl -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$*"'", "callSignNames": ["do3box"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de/api/calls
