@@ -55,7 +55,7 @@ while true
                     J|j|Ja|ja|Y|y|Yes|yes|"") 
                      echo "Rückmeldung von hampager.de: "
                      # Hier wird der Ruf ausgelöst
-                     curl -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$message"'", "callSignNames": ["'"$call"'"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de:8080/calls
+                     curl -H "Content-Type: application/json" -X POST -u "${owncall}:${ownpass}" -d '{ "text": "'"$message"'", "callSignNames": ["'"$call"'"], "transmitterGroupNames": ["'"$txgroup"'"], "emergency": false }' http://www.hampager.de/api/calls
                      break
                     ;;
                     *) echo "Abgebrochen"
