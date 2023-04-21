@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-hampager script v1.07 by DO3BOX
+hampager python script v1.01 by DO3BOX
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -19,11 +19,10 @@ The allowed TX groups are listed in OPTIONS. To add or remove groups, modify the
 """
 
 import requests
-import getpass
 import json
 
 print("\033c")
-print("hampager python script V1.00")
+print("hampager python script V1.01")
 print("Copyright 2023 by Michael Grigutsch, DO3BOX. Published under GNU General Public License v3.0")
 print()
 
